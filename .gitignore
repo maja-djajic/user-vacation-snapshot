@@ -1,0 +1,36 @@
+# Node modules (CDK & TS)
+cdk/node_modules/
+cdk/cdk.out/
+
+# Python virtualenv
+venv/
+
+# Lambda build artifacts
+package/
+
+# Byte-compiled Python files
+__pycache__/
+*.py[cod]
+*.pyo
+
+# LocalStack data
+localstack-data/
+
+# IDE/editor config
+.vscode/
+.idea/
+
+# macOS system files
+.DS_Store
+
+# Environment or secret files (if present)
+.env
+.env.*
+
+# CDK local execution scripts (optional, if generated dynamically)
+cdk/bin/
+
+# Logs and temp files
+*.log
+*.tmp
+
