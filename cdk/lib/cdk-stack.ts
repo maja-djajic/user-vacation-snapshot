@@ -12,6 +12,7 @@ export class CdkStack extends cdk.Stack {
 
     const logGroup = new logs.LogGroup(this, "LambdaLogGroup", {
       logGroupName: `/aws/lambda/VacationReportLambda`,
+      retention: logs.RetentionDays.ONE_YEAR,
     });
 
     const bucket = new s3.Bucket(this, "VacationReportBucket", {
