@@ -10,7 +10,7 @@ export class CdkStack extends cdk.Stack {
   constructor(scope: Construct, id: string, props?: cdk.StackProps) {
     super(scope, id, props);
 
-    new logs.LogGroup(this, "LambdaLogGroup", {
+    const logGroup = new logs.LogGroup(this, "LambdaLogGroup", {
       logGroupName: `/aws/lambda/VacationReportLambda`,
     });
 
@@ -24,6 +24,7 @@ export class CdkStack extends cdk.Stack {
       handler: process.env.LAMBDA_HANDLER || "",
       memorySize: 512,
       timeout: cdk.Duration.seconds(30),
+      logGroup: logGroup,
       environment: {
         BUCKET_NAME: bucket.bucketName,
         DB_USER: process.env.DB_USER || "",
