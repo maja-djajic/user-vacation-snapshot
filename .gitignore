@@ -27,9 +27,6 @@ localstack-data/
 .env
 .env.*
 
-# CDK local execution scripts (optional, if generated dynamically)
-cdk/bin/
-
 # Logs and temp files
 *.log
 *.tmp
