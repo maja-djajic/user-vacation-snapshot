@@ -11,7 +11,6 @@ export BUCKET_NAME="user-vacation-days"
 export LAMBDA_PATH="../lambda-function/package"
 export LAMBDA_HANDLER="lambda_handler.lambda_handler"
 
-export AWS_PROFILE=localstack
 export ACCESS_KEY="test"
 export SECRET_ACCESS_KEY="test"
 export REPORT_CRON="cron(* * * * ? *)"
