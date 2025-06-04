@@ -18,6 +18,9 @@ jobs:
       DB_HOST: ${{ secrets.DB_HOST }}
       DB_NAME: ${{ secrets.DB_NAME }}
       REPORT_CRON: ${{ secrets.REPORT_CRON }}
+      ACCESS_KEY: ${{ secrets.ACCESS_KEY }}
+      SECRET_ACCESS_KEY: ${{ secrets.SECRET_ACCESS_KEY }}
+      AWS_REGION: ${{ secrets.AWS_REGION }}
 
     steps:
       - name: Checkout code
